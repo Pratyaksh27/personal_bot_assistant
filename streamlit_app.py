@@ -31,7 +31,7 @@ for message in st.session_state.messages:
 # Function for generating LLM response
 def generate_response(prompt_input, email, passwd):
     # Hugging Face Login
-    print(f"Logging in with {email}...")
+    print(f"Logging in to Hugging Face with {email}...")
     print(f"Password: {passwd}")
     print(f"Prompt: {prompt_input}")
     sign = Login(email, passwd)
